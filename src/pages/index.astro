@@ -48,9 +48,15 @@ import Layout from "../layouts/Layout.astro";
   }
   header > div {
     text-align: right;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+  }
+  header > div > p:last-child {
+    margin-top: 0px;
   }
   header > div > h1 {
-    max-width: 371px;
+    width: min-content;
   }
   header > img {
     border-radius: 100%;
