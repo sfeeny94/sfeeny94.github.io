@@ -21,6 +21,13 @@ const { title } = Astro.props;
     <slot />
   </body>
 </html>
+<style>
+  body {
+    margin: 32px auto;
+    max-width: 980px;
+    padding: 16px;
+  }
+</style>
 <style is:global>
   @font-face {
     font-family: "Trend Sans W00 Four";
@@ -38,15 +45,6 @@ const { title } = Astro.props;
     -moz-osx-font-smoothing: grayscale;
     font-size: clamp(35px, 7vw, 55px);
   }
-  header p {
-    font:
-      normal normal normal 20px/1.2em "Trend Sans W00 Four",
-      sans-serif;
-    color: rgb(56, 56, 56);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: clamp(16px, 2.5vw, 20px);
-  }
   h2 {
     font:
       normal normal normal 35px/1.4em "Trend Sans W00 Four",
@@ -54,11 +52,16 @@ const { title } = Astro.props;
     color: rgb(56, 56, 56);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: clamp(24px, 5vw, 35px);
   }
   p {
     font-family: "Montserrat Variable", sans-serif;
   }
-  body {
-    margin: 32px;
+  .youtube-embed {
+    max-width: 542px;
+    height: auto;
+    aspect-ratio: 542/305;
+    margin: 0 auto;
+    display: block;
   }
 </style>

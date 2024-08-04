@@ -1,0 +1,162 @@
+---
+import { Image } from "astro:assets";
+import airlinePrices from "../assets/airline-prices.webp";
+import emergencyFund from "../assets/emergency-fund.webp";
+import loudFlower from "../assets/loud-flower.webp";
+import shrug from "../assets/shrug.webp";
+import pizza from "../assets/pizza.webp";
+import alien from "../assets/alien.webp";
+import unsubscribe from "../assets/unsubscribe.webp";
+import neurodivergence from "../assets/neurodivergence.webp";
+import anxiety from "../assets/anxiety.webp";
+import infidelity from "../assets/infidelity.webp";
+import season from "../assets/tis_season.webp";
+import honey from "../assets/honey.webp";
+import helpPeopleInTech from "../assets/help_people_in_tech.webp";
+import helpThemselves from "../assets/help_themselves.webp";
+import unbank from "../assets/unbank.webp";
+import leaveBankBillboard from "../assets/leave_bank_billboard.webp";
+import vending from "../assets/vending.webp";
+import vendingChoice from "../assets/vending-choice.webp";
+import vendingInterface from "../assets/vending-interface.webp";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="First Tech Federal Credit Union | Sarah Delphine Thompson">
+  <header>
+    <h1>First Tech Federal Credit Union</h1>
+    <p>
+      It's a credit union for tech workers! I learned a lot about finance, and
+      learned there was a lot I didn't know about finance. And they let us make
+      memes, as long as they were branded.
+    </p>
+  </header>
+  <main>
+    <article>
+      <h2>Social Media</h2>
+      <div class="image-grid">
+        <Image src={airlinePrices} alt="Airline prices social media." />
+        <Image src={emergencyFund} alt="Emergency fund social media." />
+        <Image src={loudFlower} alt="Yelling flower meme social media." />
+        <Image src={shrug} alt="Shrug meme social media." />
+        <Image src={pizza} alt="Pizza with little table on it social media." />
+        <Image src={alien} alt="Alien meme social media." />
+      </div>
+      <p>And yeah okay, we made some educational content, too.</p>
+      <div class="image-grid">
+        <Image src={unsubscribe} alt="Unsubscribe social media." />
+        <Image
+          class="image-in-grid"
+          src={neurodivergence}
+          alt="Neurodivergence social media."
+        />
+        <Image
+          class="image-in-grid"
+          src={anxiety}
+          alt="Anxiety social media."
+        />
+        <Image
+          class="image-in-grid"
+          src={infidelity}
+          alt="infidelity social media."
+        />
+        <Image class="image-in-grid" src={season} alt="Season social media." />
+        <Image class="image-in-grid" src={honey} alt="Honey social media." />
+      </div>
+      <p>Copy/Concept: Me</p>
+      <p>Design/Concept: Laura Wilusz, Gage Murrey</p>
+      <h2>Brand Campaign 2024: What the B**k?</h2>
+      <p>
+        First Tech asked us to push the envelope with this one, and we
+        delivered. While the final campaign was ultimately re-worked beyond
+        recognition in-house, this R1 was cathartic just to create.
+      </p>
+      <div class="image-row">
+        <Image src={helpPeopleInTech} alt="Help people in tech social media." />
+        <Image
+          src={helpThemselves}
+          alt="Help themselves prices social media."
+        />
+        <Image src={unbank} alt="Unbank social media." />
+      </div>
+      <div class="center-image">
+        <Image src={leaveBankBillboard} alt="Leave bank billboard." />
+      </div>
+      <p>
+        Our proposed activation: the Snack Union. A vending machine that works
+        like a credit union, putting profits towards making the experience
+        better for anyone who uses its services. Complete with manifesto.
+      </p>
+      <div class="center-image">
+        <Image src={vending} alt="Vending machine." />
+      </div>
+      <div class="two-image-row">
+        <Image src={vendingChoice} alt="Vending selection screen." />
+        <Image
+          src={vendingInterface}
+          alt="Information on the vending machine."
+        />
+      </div>
+      <p>Copy/Concept: Me</p>
+      <p>Design/Concept: Laura Wilusz, Gage Murrey</p>
+      <h2>Student Loan Refinancing 2021</h2>
+      <p>
+        I love a good metaphor. And that actor really let us shave a stripe into
+        the back of his head.
+      </p>
+      <iframe
+        width="100%"
+        class="youtube-embed"
+        src="https://www.youtube.com/embed/NX1MNTENOU4?si=9_TrLAp9ITGRQBab"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      <p>Copy/Concept: Me</p>
+      <p>Video Direction/Concept: Josh Lunden</p>
+      <p>Art Direction: Bob Vandehey</p>
+    </article>
+  </main>
+</Layout>
+<style>
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 286px));
+    justify-content: center;
+  }
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 /1;
+  }
+  .image-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 248px));
+    column-gap: 16px;
+    justify-content: center;
+  }
+  .image-row img {
+    width: 100%;
+    height: auto;
+  }
+  .two-image-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 394px));
+    gap: 16px;
+    justify-content: center;
+  }
+  .two-image-row img {
+    width: 100%;
+    height: auto;
+  }
+  .center-image {
+    display: grid;
+    justify-content: center;
+    margin: 16px;
+  }
+  .center-image img {
+    width: 100%;
+    height: auto;
+  }
+</style>
