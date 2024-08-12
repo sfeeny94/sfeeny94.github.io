@@ -1,0 +1,65 @@
+<nav>
+  <ul class="nav">
+    <li><a href="/">Home</a></li>
+    <li class="has-dropdown">
+      <a href="#">My Work</a>
+
+      <ul class="dropdown">
+        <li><a href="/first-tech">First Tech</a></li>
+        <li><a href="/oregon-lottery">Oregon Lottery</a></li>
+        <li><a href="/dr-martens">Dr. Martens</a></li>
+      </ul>
+    </li>
+    <li><a href="/resume">Resume</a></li>
+  </ul>
+</nav>
+<style>
+  /* Influenced by https://fireship.io/snippets/basic-css-dropdown-menu/ */
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+  }
+  .nav {
+    background: #fff7dd;
+    border-radius: 16px;
+    box-shadow:
+      rgba(0, 0, 0, 0.12) 0px 1px 3px,
+      rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 16px;
+    font-size: 18px;
+  }
+  .nav > li {
+    margin: 0 8px;
+  }
+  .dropdown {
+    opacity: 0;
+    background: #fff7dd;
+    position: absolute;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: column;
+    margin-top: 8px;
+    padding: 0.5rem;
+
+    transition: opacity 0.15s ease-out;
+    border-radius: 16px;
+    box-shadow:
+      rgba(0, 0, 0, 0.12) 0px 1px 3px,
+      rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+  .dropdown li {
+    margin: 8px;
+  }
+  .has-dropdown:focus-within .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+  }
+</style>
